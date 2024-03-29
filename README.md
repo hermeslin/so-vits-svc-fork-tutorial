@@ -88,7 +88,7 @@ docker compose run svc-arm64 pre-config
 ```
   - Choose an F0-method (e.g., crepe|crepe-tiny|parselmouth|dio|harvest). By default, svc uses `dio`:
 ```shell
-docker compose run svc-arm64 pre-hubert
+docker compose run svc-arm64 pre-hubert -fm crepe
 ```
 
 5. Start Training. Training will take several minutes:

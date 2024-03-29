@@ -98,7 +98,7 @@ docker compose run svc-arm64 train -t
 
 6. Convert Speaker’s Voice to Author’s Voice:
 ```shell
-svc infer audio/{YOUR_AUTHORS_VOICE_FILE_NAME}.wav
+docker compose run svc-arm64 infer audio/{YOUR_AUTHORS_VOICE_FILE_NAME}.wav
 ```
 
 7. View the Result:

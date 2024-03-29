@@ -35,7 +35,7 @@ docker compose build svc-arm64
 docker compose build svc
 ```
 
-2. Test the command, You should see the result image below after running:
+2. Test the command, You should see the result below after running:
 ```shell
 docker compose run svc-arm64 --help
 
@@ -67,7 +67,9 @@ Commands:
   train          Train model If D_0.pth or G_0.pth not found, automatically download from hub.
   train-cluster  Train k-means clustering
   vc             Realtime inference from microphone
+```
 
+```shell
 ## or you want to login to the container
 docker compose run --rm --entrypoint /bin/bash svc-arm64
 ```

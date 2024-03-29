@@ -1,0 +1,19 @@
+version: '3'
+services:
+  svc:
+    ipc: host
+    build:
+      context: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./storage:/workspace/storage
+  svc-arm64:
+    ipc: host
+    build:
+      context: .
+      dockerfile: DockerfileArm
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./storage:/workspace/storage

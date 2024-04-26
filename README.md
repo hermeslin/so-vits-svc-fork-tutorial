@@ -38,7 +38,10 @@ docker compose build svc
 2. Test the command, You should see the result below after running:
 ```shell
 docker compose run svc-arm64 --help
+```
 
+Result:
+```shell
 Usage: svc [OPTIONS] COMMAND [ARGS]...
 
   so-vits-svc allows any folder structure for training data.

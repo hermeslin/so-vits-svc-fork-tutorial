@@ -3,8 +3,8 @@ FROM armswdev/pytorch-arm-neoverse:r24.02-torch-2.2.0-rc8-openblas
 USER root
 RUN ["apt", "update"]
 RUN ["apt", "install", "-y", "build-essential"]
-RUN ["pip", "install", "-U", "pip", "setuptools", "wheel"]
-RUN ["pip", "install", "-U", "so-vits-svc-fork", "Click", "psutil"]
+RUN ["pip", "install", "-U", "pip", "setuptools==69.2.0", "wheel==0.43.0"]
+RUN ["pip", "install", "-U", "so-vits-svc-fork==4.1.58", "click==8.1.7", "psutil==5.9.8"]
 
 WORKDIR /workspace/storage
 

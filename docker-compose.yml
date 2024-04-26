@@ -1,6 +1,7 @@
 version: '3'
 services:
   svc:
+    image: "so-vits-svc-tutorial:4.1.58"
     ipc: host
     build:
       context: .
@@ -9,6 +10,7 @@ services:
     volumes:
       - ./storage:/workspace/storage
   svc-arm64:
+    image: "so-vits-svc-tutorial-arm:4.1.58"
     ipc: host
     build:
       context: .
